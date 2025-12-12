@@ -10,16 +10,21 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-configure_file(application.rc.in application.rc)
+configure_file(app.rc.in app.rc)
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 qt_add_executable({{cookiecutter.project_name}}
-    application.rc
+    app.rc
     main.cpp
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+)
+
+qt_add_resources({{cookiecutter.project_name}} "icons"
+    PREFIX "/"
+    FILES icons/qt.ico
 )
 
 target_link_libraries({{cookiecutter.project_name}} PRIVATE Qt6::Widgets)
