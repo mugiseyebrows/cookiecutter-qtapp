@@ -11,7 +11,7 @@ pip install cookiecutter
 
 2) Generate project
 ```bash
-cookiecutter https://github.com/mugiseyebrows/cookiecutter-qtapp.git
+cookiecutter https://github.com/mugiseyebrows/cookiecutter-qtapp.git --checkout my
 ```
 
 3) Build
