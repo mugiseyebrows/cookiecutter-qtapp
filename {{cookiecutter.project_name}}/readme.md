@@ -3,8 +3,6 @@
 ## Build
 
 ```bash
-mkdir Release
-cd Release
-cmake -G Ninja -DCMAKE_BUILD_TYPE=Release ..
-ninja
+cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -B Release
+cmake --build Release
 ```
