@@ -2,7 +2,7 @@
 
 cookiecutter Qt application template
 
-# Use
+# use
 
 1) Install cookiecutter
 ```bash
