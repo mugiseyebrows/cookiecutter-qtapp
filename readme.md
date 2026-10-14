@@ -1,8 +1,8 @@
 # cookiecutter-qtapp
 
-cookiecutter Qt app template
+cookiecutter Qt application template
 
-# use
+# Use
 
 1) Install cookiecutter
 ```bash
